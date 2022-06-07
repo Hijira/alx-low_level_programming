@@ -1,2 +1,2 @@
-$gcc main.c -o cisfun
-$./cisfun
+#!/bin/bash
+$gcc program.c -o program-output
