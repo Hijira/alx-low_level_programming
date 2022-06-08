@@ -1,14 +1,21 @@
-#include <unistd.h> 
+#include <stdio.h>
 
-#include <sys/syscall.h> 
+/**
 
-int main(void) 
+* main - prints a string
 
-{ 
+* Description: prints “Programming is like building a multilingual puzzle
 
-    const char msg[] = "Programming is like building a multilingual puzzle\n";
-syscall(SYS_write, 1, msg, sizeof(msg)); 
+*Return: 0
 
-    return 0; 
+*/
 
-} 
+int main(void)
+
+{
+
+	puts(“\”Programming is like building a multilingual puzzle”);
+
+	return (0);
+
+}
