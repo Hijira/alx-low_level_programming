@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-* print_rev - prints a reverse string.
-* @s: input string.
-* Return: no return.
-* betty style doc for function main goes there
-*/
+ * print_rev - prints a reverse string.
+ * @s: input string.
+ * Return: no return.
+ * betty style doc for function main goes there
+ */
 void print_rev(char *s)
 {
 int str_rev = 0, a, b;
