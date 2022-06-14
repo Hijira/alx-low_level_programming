@@ -7,7 +7,7 @@
  */
 int _atoi(char *s)
 {
-int mide = 1, int z ;
+int mide = 1;
 unsigned int olu = 0;
 do {
 if (*s == '-')
@@ -17,6 +17,5 @@ olu = (olu * 10) + (*s - '0');
 else if (olu > 0)
 break;
 } while (*s++);
-z=olu * mide
-return (z);
+return (olu * mide);
 }
