@@ -1,20 +1,18 @@
 #include "main.h"
 /**
- * _isalpha - shows 1 if input is an alphabet else 0
- * Return: 1 for alphaber. 0 for the rest  Always (SUCCESS)
+ * print_alphabet_x10 - print lowercase alphabet 10 times
+ * Return:0  Always (SUCCESS)
  * betty style doc for function main goes there
-*/
-int _isalpha(int c)
+ */
+void print_alphabet_x10(void)
 {
-if ((c >= 97 && c <+ 122) || (c >= 65 && c <= 90))
+int a, i;
+for (a = 0; a <= 9; a++)
 {
-return (1);
-}
-else
+for (i = 97; i <= 122; i++)
 {
-return (0);
-}
 _putchar(i);
+}
 /* using ASCII valuse in the code above */
 _putchar('\n');
 }
