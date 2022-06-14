@@ -1,16 +1,20 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * print_alphabet - print lowercase alphabet
+ * main - print _putchar thrn a new line
  * Return:0  Always (SUCCESS)
  * betty style doc for function main goes there
  */
-void print_alphabet(void)
+int main(void)
 {
-int i;
-for (i = 97; i <= 122; i++)
-{
-_putchar(i);
-}
-/* using ASCII valuse in the code above */
-_putchar('\n');
+putchar('_');
+putchar('p');
+putchar('u');
+putchar('t');
+putchar('c');
+putchar('h');
+putchar('a');
+putchar('r');
+putchar('\n');
+return (0);
 }
