@@ -17,5 +17,5 @@ olu = (olu * 10) + (*s - '0');
 else if (olu > 0)
 break;
 } while (*s++);
-return (olu * mide);
+return (olu *mide);
 }
