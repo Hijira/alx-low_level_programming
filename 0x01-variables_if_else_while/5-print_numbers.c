@@ -1,16 +1,15 @@
 #include <stdio.h>
 /**
- * main - testing lowercase alphabet.
+ * main - Prints numbers from 0 to 9.
  * Return: Always 0 (Success)
  * betty style doc for function main goes there
  */
 int main(void)
 {
-char alpha[24] = "abcdfghijklmnoprstuvwxyz";
 int i;
-for (i = 0; i < 24; i++)
+for (i = 0; i < 10; i++)
 {
-putchar(alpha[i]);
+printf("%d", i);
 }
 putchar('\n');
 return (0);
