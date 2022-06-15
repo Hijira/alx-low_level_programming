@@ -7,14 +7,14 @@
 int main(void)
 {
 int c;
-unsigned long a =0, b = 1, d;
+unsigned long a = 0, b = 1, d;
 for (d = 0; d < 50; d++)
 {
 d = a + b;
 printf("%lu", d);
 a = b;
 b = d;
-if(c == 49)
+if (c == 49)
 printf("\n");
 else
 printf(", ");
