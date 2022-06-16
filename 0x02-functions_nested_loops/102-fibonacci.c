@@ -13,6 +13,9 @@ b = 1;
 for (c = 0; c < 50; c++)
 {
 d = a + b;
+if(d==1)
+printf(d);
+else  
 printf(", %ld", d);
 a = b;
 b = d;
