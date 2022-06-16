@@ -8,15 +8,15 @@ int main(void)
 {
 int c;
 long int a, b, d;
-a = 1;
-b = 2;
+a = 0;
+b = 1;
 printf("%ld, %ld", a, b);
-for (c = 0; c < 48; c++)
+for (c = 0; c < 50; c++)
 {
 d = a + b;
 printf(", %ld", d);
 a = b;
-a = d;
+b = d;
 }
 printf("\n");
 return (0);
