@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main - keygen.
-* Return: 0 Always.
-* betty style doc for function main goes there
-*/
+ * main - keygen.
+ * Return: 0 Always.
+ * betty style doc for function main goes there
+ */
 int main(void)
 {
 int key = 0, gen = 0;
