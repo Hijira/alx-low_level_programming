@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * *_strcat - concatenates 2 strings.
  * @dest: destination.
