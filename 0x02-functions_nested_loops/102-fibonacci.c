@@ -10,7 +10,7 @@ int c;
 long int a, b, d;
 a = 1;
 b = 2;
-printf(a, b);
+printf("%ld, %ld", a, b);
 for (c = 0; c < 48; c++)
 {
 d = a + b;
