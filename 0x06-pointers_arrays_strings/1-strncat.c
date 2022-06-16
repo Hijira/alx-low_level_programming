@@ -23,4 +23,3 @@ str2++;
 }
 return (dest);
 }
-}
