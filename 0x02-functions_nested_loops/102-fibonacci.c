@@ -8,14 +8,12 @@ int main(void)
 {
 int c;
 long int a, b, d;
-a = 0;
-b = 1;
-for (c = 0; c < 50; c++)
+a = 1;
+b = 2;
+printf(a, b);
+for (c = 0; c < 48; c++)
 {
 d = a + b;
-if(d==1)
-printf(d);
-else  
 printf(", %ld", d);
 a = b;
 b = d;
