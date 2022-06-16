@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * *_strncpy - string copycat
  * @dest: destination.
@@ -14,5 +15,5 @@ for (str = 0; str < n && src[i] != '\0'; str++)
 dest[i] = src[i];
 for ( ; str < n; str++)
 dest[i] = '\0';
-return (dest);
+	return (dest);
 }
