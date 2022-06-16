@@ -7,17 +7,17 @@
 int main(void)
 {
 int c;
-unsigned long a =0, b = 1, d;
-for (d = 0; d < 50; d++)
+long int a, b, d;
+a = 1;
+b = 2;
+printf("%ld, %ld", a, b);
+for (c = 0; c < 48; c++)
 {
 d = a + b;
-printf("%lu", d);
+printf(", %ld", d);
 a = b;
-b = d;
-if(c == 49)
-printf("\n");
-else
-printf(", ");
+a = d;
 }
+printf("\n");
 return (0);
 }
