@@ -10,7 +10,6 @@ int c;
 long int a, b, d;
 a = 0;
 b = 1;
-printf("%ld, %ld", a, b);
 for (c = 0; c < 50; c++)
 {
 d = a + b;
