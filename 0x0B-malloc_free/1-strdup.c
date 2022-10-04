@@ -12,7 +12,7 @@ char *output;
 unsigned int a, b;
 if (str == NULL)
 return (NULL);
-for (a = 0; str[a] != '\0'; a++);
+for (a = 0; str[a] != '\0'; a++)
 output = (char *)malloc(sizeof(char) * (a + 1));
 if (output == NULL)
 return (NULL);
