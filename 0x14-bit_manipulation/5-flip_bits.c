@@ -15,3 +15,5 @@ for (nbits = 0; n || m; n >>= 1, m >>= 1)
 if ((n & 1) != (m & 1))
 nbits++;
 }
+return (nbits);
+}

@@ -12,5 +12,3 @@ x = 1;
 c = (char *) &x;
 return ((int)*c);
 }
-return (nbits);
-}
