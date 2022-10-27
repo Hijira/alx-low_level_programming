@@ -5,7 +5,6 @@
  * @n: pointer of an unsigned long int.
  * @index: index of the bit.
  * Return: 1 if it worked, -1 if it didn't.
- * betty style doc for function main goes there
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
@@ -16,5 +15,4 @@ m = 1 << index;
 if (*n & m)
 *n ^= m;
 return (1);
-}
 }
