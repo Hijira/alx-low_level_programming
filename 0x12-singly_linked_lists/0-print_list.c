@@ -1,27 +1,22 @@
-#include "main.h"
+#include "lists.h"
 /**
- * read_textfile - reads a text file and prints the letters
- * @filename: filename.
- * @letters: numbers of letters printed.
- * Return: numbers of letters printed. It fails, returns 0.
+ * print_list - prints all the elements of a list_t list.
+ * @h: singly linked list.
+ * Return: number of elements in the list.
  * betty style doc for function main goes there
  */
-ssize_t read_textfile(const char *filename, size_t letters)
+size_t print_list(const list_t *h)
 {
-int fd;
-ssize_t nrd, nwr;
-char *buf;
-if (!filename)
-return (0);
-fd = open(filename, O_RDONLY);
-if (fd == -1)
-return (0);
-buf = malloc(sizeof(char) * (letters));
-if (!buf)
-return (0);
-nrd = read(fd, buf, letters);
-nwr = write(STDOUT_FILENO, buf, nrd);
-close(fd);
-free(buf);
-return (nwr);
+size_t element;
+element = 0;
+while (h != NULL)
+{
+if (h->str == NULL)
+printf("[%d] %s\n", 0, "(nil)");
+else
+printf("[%d] %s\n", h->len, h->str);
+h = h->next;
+element++;
+}
+return (element);
 }

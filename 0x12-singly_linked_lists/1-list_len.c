@@ -1,28 +1,18 @@
-#include "main.h"
+#include "lists.h"
 /**
- * create_file - creates a file
- * @filename: filename.
- * @text_content: content writed in the file.
- * Return: 1 if it success. -1 if it fails.
+ * list_len - returns then number of elements in a list.
+ * @h: singly linked list.
+ * Return: number of elements in the list.
  * betty style doc for function main goes there
  */
-int create_file(const char *filename, char *text_content)
+size_t list_len(const list_t *h)
 {
-int fd;
-int nletters;
-int rwr;
-if (!filename)
-return (-1);
-fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-if (fd == -1)
-return (-1);
-if (!text_content)
-text_content = "";
-for (nletters = 0; text_content[nletters]; nletters++)
-;
-rwr = write(fd, text_content, nletters);
-if (rwr == -1)
-return (-1);
-close(fd);
-return (1);
+size_t element;
+element = 0;
+while (h != NULL)
+{
+h = h->next;
+element++;
+}
+return (element);
 }
